@@ -3949,6 +3949,10 @@ int main(int argc, char** argv)
       { printf("force[%d] = { %16.16e , %16.16e , %16.16e }\n",i,force[0+3*i]*E0/A0,force[1+3*i]*E0/A0,force[2+3*i]*E0/A0); }
     }
 
+    // final timing point
+    double time2 = omp_get_wtime();
+    printf("total time usage = %e s\n",time2-time1);
+
     // print density & response matrices to a debug file (1st block column only for periodic systems)
     if(solver != 0 && solver != -1)
     {
@@ -3985,10 +3989,6 @@ int main(int argc, char** argv)
     if(solver == 9 || solver == 10 || solver == -1)
     { free(latvec); }
     free(atom);
-
-    // final timing point
-    double time2 = omp_get_wtime();
-    printf("total time usage = %e s\n",time2-time1);
   }
   else // mpirank != 0 branch of the main program
   {
