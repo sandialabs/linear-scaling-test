@@ -31,7 +31,7 @@
 //  9 | rational    | local (infinite)  | 0      | <#/2 of poles> <res. tol.> <loc. rad.>
 // 10 | exact       | k-grid (infinite) | 0      | <# of k-grid pts. per dimension> <loc. rad.>
 // Available testers:
-// -1 | none        | local (infinite)  | 0      | <pre. shift> <res. tol.> <min. rad.> <max. rad.> <# rad.> [precondition test]
+// -1 | none        | local (infinite)  | 0      | <res. tol.> <min. rad.> <max. rad.> <# rad.> [precondition test]
 
 // INPUT KEY:
 //  <#/2 of poles> : number of complex-conjugate pole pairs in the rational approximation of the Fermi-Dirac function
@@ -42,7 +42,6 @@
 //  <seed> : integer seed for the pseudo-random number generator
 //  <# of samples> : the number of samples drawn from the colored complex rotor multi-vector distribution
 //  <# of k-grid pts. per dimension> : the number of points assigned to the k-point grid per reciprocal-space dimension (3)
-//  <pre. shift> : imaginary energy shift for the shifted-inverse preconditioner
 //  <min. rad.> <max. rad.> <# rad.> : minimum/maximum/number-of radius values for a grid of preconditioner localization radii
 
 // Structure file format (*.xyz) for monoatomic copper clusters:
@@ -3478,7 +3477,7 @@ int main(int argc, char** argv)
 
     // parse command-line input
     int solver, natom, napprox, nsample, seed;
-    double temperature, potential, res_tol, pre_shift = 0.0, pre_radius = 0.0, local_radius = 0.0;
+    double temperature, potential, res_tol, pre_radius = 0.0, local_radius = 0.0;
 
     // check for an appropriate number of command-line arguments
     if(argc < 5)
@@ -3529,7 +3528,7 @@ int main(int argc, char** argv)
       {
         if(argc < 6)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <#/2 of poles>\n");
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <#/2 of poles>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
         sscanf(argv[5],"%d",&napprox);
@@ -3539,7 +3538,8 @@ int main(int argc, char** argv)
       {
         if(argc < 7)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <# of Cheby.> <res. tol.>\n");
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <# of Cheby.> "
+                 "<res. tol.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
         sscanf(argv[5],"%d",&napprox);
@@ -3550,7 +3550,8 @@ int main(int argc, char** argv)
       {
         if(argc < 7)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <#/2 of poles> <res. tol.>\n");
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <#/2 of poles> "
+                 "<res. tol.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
         sscanf(argv[5],"%d",&napprox);
@@ -3561,7 +3562,7 @@ int main(int argc, char** argv)
       {
         if(argc < 8)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <# of Cheby.> <res. tol.> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <# of Cheby.> <res. tol.> "
                  "<loc. rad.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
@@ -3575,7 +3576,7 @@ int main(int argc, char** argv)
       {
         if(argc < 8)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <#/2 of poles> <res. tol.> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <#/2 of poles> <res. tol.> "
                  "<loc. rad.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
@@ -3588,7 +3589,7 @@ int main(int argc, char** argv)
       {
         if(argc < 10)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <# of Cheby.> <res. tol.> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <# of Cheby.> <res. tol.> "
                  "<loc. rad.> <seed> <# of samples>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
@@ -3605,7 +3606,7 @@ int main(int argc, char** argv)
       {
         if(argc < 10)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <#/2 of poles> <res. tol.> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <#/2 of poles> <res. tol.> "
                  "<loc. rad.> <seed> <# of samples>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
@@ -3622,7 +3623,7 @@ int main(int argc, char** argv)
       {
         if(argc < 7)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> "
                  "<# of k-grid pts. per dimension> <loc. rad.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
@@ -3634,15 +3635,14 @@ int main(int argc, char** argv)
       {
         if(argc < 10)
         {
-          printf("USAGE: <executable> <structure file> <fermi energy> <temperature> <solver> <pre. shift> <res. tol.> "
+          printf("USAGE: <executable> <structure file> <chemical potential> <temperature> <solver> <res. tol.> "
                  "<min. rad.> <max. rad.> <# rad.>\n");
           MPI_Abort(MPI_COMM_WORLD,0);
         }
-        sscanf(argv[5],"%lf",&pre_shift);
-        sscanf(argv[6],"%lf",&res_tol);
-        sscanf(argv[7],"%lf",&pre_radius);
-        sscanf(argv[8],"%lf",&local_radius);
-        sscanf(argv[9],"%d",&nsample);
+        sscanf(argv[5],"%lf",&res_tol);
+        sscanf(argv[6],"%lf",&pre_radius);
+        sscanf(argv[7],"%lf",&local_radius);
+        sscanf(argv[8],"%d",&nsample);
       } break;
 
       default:
@@ -3656,7 +3656,6 @@ int main(int argc, char** argv)
     potential /= E0;
     temperature /= E0;
     for(int i=0 ; i<3*natom ; i++) { atom[i] /= A0; }
-    pre_shift /= E0;
     pre_radius /= A0;
     local_radius /= A0;
 
@@ -3862,8 +3861,8 @@ int main(int argc, char** argv)
       case -1:
       {
         printf("infinite preconditioning tester\n");
-        double complex z0 = potential + I*M_PI*temperature;
-        double complex z1 = potential + I*pre_shift;
+        double complex z0 = potential + I*M_PI*temperature; // first Matsubara pole
+        double complex z1 = potential + I*3.0*M_PI*temperature; // second Matsubara pole
         infinite_pre_tester(nblock,nsample,pre_radius,local_radius,res_tol,z0,z1,&sparsity,atom,latvec,hamiltonian,overlap);
       } break;
 

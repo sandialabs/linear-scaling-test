@@ -1,0 +1,7 @@
+We had to internally change the maximum number of k-points allowed in VASP to run this calculation.
+A 2x2x2 supercell w/ 150x150x150 k-grid was used instead of a 300x300x300 k-grid on the primitive cell
+because VASP has a bottleneck when constructing and reducing extremely large k-grids.
+
+We do not copy the POTCAR file here because it is a propriety part of the VASP software.
+We use the standard Cu LDA POTCAR file found in VASP version 5.4.4,
+which was generated in 2005 and thus common to many other versions of VASP.

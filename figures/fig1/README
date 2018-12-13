@@ -1,0 +1,32 @@
+A.
+
+DFT (VASP 5.4.4) and tight-binding DOS were both generated on a 300x300x300 k-point grid at T = 0.03 eV
+
+DFT calculation used the standard copper PAW (3p in core) with LDA and a standard 300 eV basis cutoff
+
+For referencing, the Fermi energy is 2.974605 eV in the tight-binding DOS and 8.4055 eV in VASP
+
+B.
+
+For both DFT & tight-binding:
+T = 0.1 eV used a 80x80x80 k-point grid
+T = 0.2 eV used a 40x40x40 k-point grid
+T >= 0.3 eV used a 20x20x20 k-point grid
+
+We report the DFT internal energy as reported by VASP, which is the cohesive energy relative to an isolated, spin-unpolarized copper atom
+
+C.
+
+These values are plotted from near the equilibrium Cu-Cu spacing, ~2.5 A, to near the cutoff, ~6.6 A
+
+D.
+
+k-grids used to converge this plot:
+
+T = 0.03 -> 300^3
+T = 0.1  -> 150^3
+T = 0.3  -> 80^3
+T = 1.0  -> 40^3
+T = 3.0  -> 20^3
+
+These 'decay.T*' files have been pruned from the raw output to remove duplicate entries.

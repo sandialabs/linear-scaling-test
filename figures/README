@@ -1,0 +1,6 @@
+This directory contains all the inputs used to generate the data and figures in the paper,
+except the cluster geometries (which can be procedurally generated in the "structures" directory)
+and the VASP "POTCAR" projector-augmented-wave file (which is proprietary).
+
+All timing benchmarks were run on one node of the "Uno" cluster at Sandia National Laboratories,
+which consist of two Intel Sandy Bridge 2.7 GHz processors (E5-2680) and 64 GB of DDR3 RAM on a Lustre file system.

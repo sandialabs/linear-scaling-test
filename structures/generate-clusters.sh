@@ -1,3 +1,4 @@
+gcc -o cluster.exe cluster.c
 ./cluster.exe 1.0 0 > c0.xyz
 ./cluster.exe 4.0 1 > c1.xyz
 ./cluster.exe 6.0 0 > c2.xyz
