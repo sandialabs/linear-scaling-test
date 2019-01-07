@@ -1,0 +1,34 @@
+./tb3d.exe 5 0.5 > lo5.out
+./tb3d.exe 6 0.5 > lo6.out
+./tb3d.exe 7 0.5 > lo7.out
+./tb3d.exe 8 0.5 > lo8.out
+./tb3d.exe 9 0.5 > lo9.out
+./tb3d.exe 10 0.5 > lo10.out
+./tb3d.exe 11 0.5 > lo11.out
+./tb3d.exe 12 0.5 > lo12.out
+./tb3d.exe 13 0.5 > lo13.out
+./tb3d.exe 14 0.5 > lo14.out
+./tb3d.exe 15 0.5 > lo15.out
+./tb3d.exe 16 0.5 > lo16.out
+./tb3d.exe 17 0.5 > lo17.out
+./tb3d.exe 18 0.5 > lo18.out
+./tb3d.exe 19 0.5 > lo19.out
+./tb3d.exe 20 0.5 > lo20.out
+./tb3d.exe 21 0.5 > lo21.out
+head -5 lo5.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 4, sum1, sum2, sum3, sum4, sum5 }' > lo_local.txt
+head -5 lo6.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 5, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo7.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 6, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo8.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 7, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo9.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 8, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo10.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 9, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo11.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 10, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo12.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 11, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo13.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 12, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo14.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 13, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo15.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 14, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo16.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 15, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo17.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 16, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo18.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 17, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo19.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 18, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo20.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 19, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
+head -5 lo21.out | awk '{ sum1 += $2; sum2 += $3; sum3 += $4; sum4 += $5; sum5 += $6 } END{ print 20, sum1, sum2, sum3, sum4, sum5 }' >> lo_local.txt
