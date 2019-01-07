@@ -1,0 +1,2 @@
+The scaling tests were performed by adjusting MKL_NUM_THREADS and OMP_NUM_THREADS environmental variables,
+except for PEXSI where we adjust the number of MPI tasks in the mpiexec call.

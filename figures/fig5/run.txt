@@ -1,0 +1,143 @@
+Data for (a):
+
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 1 > ref.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 2 1e-10 > pole2.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 3 1e-10 > pole3.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 4 1e-10 > pole4.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 5 1e-10 > pole5.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 6 1e-10 > pole6.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 7 1e-10 > pole7.out
+
+Data for (b):
+
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-1 > res1.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-2 > res2.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-3 > res3.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-4 > res4.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-5 > res5.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 4 14 1e-6 > res6.out
+
+Data for (c):
+
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 7.0 1 1 > loc7.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 8.0 1 1 > loc8.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 9.0 1 1 > loc9.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 10.0 1 1 > loc10.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 11.0 1 1 > loc11.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 12.0 1 1 > loc12.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 4 1e-4 13.0 1 1 > loc13.out
+
+Data for (d):
+
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 7.0 1 1 > rand7.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 8.0 1 1 > rand8.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 9.0 1 1 > rand9.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 10.0 1 1 > rand10.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 11.0 1 1 > rand11.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 12.0 1 1 > rand12.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 4 1e-4 13.0 1 1 > rand13.out
+
+Data for (e):
+
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 7.0 > local7a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 7.0 > local7b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 7.0 > local7c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 8.0 > local8a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 8.0 > local8b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 8.0 > local8c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 9.0 > local9a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 9.0 > local9b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 9.0 > local9c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 10.0 > local10a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 10.0 > local10b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 10.0 > local10c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 11.0 > local11a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 11.0 > local11b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 11.0 > local11c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 12.0 > local12a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 12.0 > local12b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 12.0 > local12c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 13.0 > local13a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 13.0 > local13b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 13.0 > local13c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 14.0 > local14a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 14.0 > local14b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 14.0 > local14c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 15.0 > local15a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 15.0 > local15b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 15.0 > local15c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 16.0 > local16a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 16.0 > local16b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 16.0 > local16c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 17.0 > local17a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 17.0 > local17b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 17.0 > local17c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 18.0 > local18a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 18.0 > local18b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 18.0 > local18c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 19.0 > local19a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 19.0 > local19b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 19.0 > local19c.out
+./solver_benchmark.exe ../structures/crystal.xyz 3.852 1.0 9 4 1e-4 20.0 > local20a.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 20.0 > local20b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 20.0 > local20c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 21.0 > local21b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 21.0 > local21c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 22.0 > local22b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 22.0 > local22c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 23.0 > local23b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 23.0 > local23c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 24.0 > local24b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 24.0 > local24c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 25.0 > local25b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 25.0 > local25c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 26.0 > local26b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 26.0 > local26c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 27.0 > local27b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 27.0 > local27c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 28.0 > local28b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 28.0 > local28c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 29.0 > local29b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 29.0 > local29c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 30.0 > local30b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 30.0 > local30c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 31.0 > local31b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 31.0 > local31c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 32.0 > local32b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 32.0 > local32c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 33.0 > local33b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 33.0 > local33c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 34.0 > local34b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 34.0 > local34c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 35.0 > local35b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 35.0 > local35c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 36.0 > local36b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 36.0 > local36c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 37.0 > local37b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 37.0 > local37c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 38.0 > local38b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 38.0 > local38c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 39.0 > local39b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 39.0 > local39c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 0.3 9 5 1e-4 40.0 > local40b.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 40.0 > local40c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 41.0 > local41c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 42.0 > local42c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 43.0 > local43c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 44.0 > local44c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 45.0 > local45c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 46.0 > local46c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 47.0 > local47c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 48.0 > local48c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 49.0 > local49c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 50.0 > local50c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 51.0 > local51c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 52.0 > local52c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 53.0 > local53c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 54.0 > local54c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 55.0 > local55c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 56.0 > local56c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 57.0 > local57c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 58.0 > local58c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 59.0 > local59c.out
+./solver_benchmark.exe ../structures/crystal.xyz 2.975 0.03 9 7 1e-4 60.0 > local60c.out

@@ -1,0 +1,334 @@
+The benchmark runs are organized by solver:
+
+solver = 1 (full diagonalization):
+
+./solver_benchmark.exe ../structures/c1.xyz 1.819 0.03 1 > s1/c1a.out
+./solver_benchmark.exe ../structures/c2.xyz 2.239 0.03 1 > s1/c2a.out
+./solver_benchmark.exe ../structures/c3.xyz 2.639 0.03 1 > s1/c3a.out
+./solver_benchmark.exe ../structures/c4.xyz 3.155 0.03 1 > s1/c4a.out
+./solver_benchmark.exe ../structures/c5.xyz 2.579 0.03 1 > s1/c5a.out
+./solver_benchmark.exe ../structures/c6.xyz 2.588 0.03 1 > s1/c6a.out
+./solver_benchmark.exe ../structures/c7.xyz 2.680 0.03 1 > s1/c7a.out
+./solver_benchmark.exe ../structures/c8.xyz 2.579 0.03 1 > s1/c8a.out
+./solver_benchmark.exe ../structures/c9.xyz 2.717 0.03 1 > s1/c9a.out
+./solver_benchmark.exe ../structures/c10.xyz 2.756 0.03 1 > s1/c10a.out
+./solver_benchmark.exe ../structures/c11.xyz 2.761 0.03 1 > s1/c11a.out
+./solver_benchmark.exe ../structures/c12.xyz 2.579 0.03 1 > s1/c12a.out
+./solver_benchmark.exe ../structures/c13.xyz 2.699 0.03 1 > s1/c13a.out
+./solver_benchmark.exe ../structures/c14.xyz 2.782 0.03 1 > s1/c14a.out
+./solver_benchmark.exe ../structures/c15.xyz 2.799 0.03 1 > s1/c15a.out
+./solver_benchmark.exe ../structures/c16.xyz 2.742 0.03 1 > s1/c16a.out
+./solver_benchmark.exe ../structures/c17.xyz 2.808 0.03 1 > s1/c17a.out
+./solver_benchmark.exe ../structures/c18.xyz 2.790 0.03 1 > s1/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 2.809 0.03 1 > s1/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.843 0.03 1 > s1/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.850 0.03 1 > s1/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.861 0.03 1 > s1/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.867 0.03 1 > s1/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.876 0.03 1 > s1/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.885 0.03 1 > s1/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.891 0.03 1 > s1/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.897 0.03 1 > s1/c27.out
+
+solver = 2 (selected inversion): [with appropriate mpiexec/mpirun/etc. call]
+
+./solver_benchmark.exe ../structures/c1.xyz 3.137 1.0 2 3 > s2.hi/c1a.out
+./solver_benchmark.exe ../structures/c2.xyz 3.284 1.0 2 3 > s2.hi/c2a.out
+./solver_benchmark.exe ../structures/c3.xyz 3.294 1.0 2 3 > s2.hi/c3a.out
+./solver_benchmark.exe ../structures/c4.xyz 3.410 1.0 2 3 > s2.hi/c4a.out
+./solver_benchmark.exe ../structures/c5.xyz 3.398 1.0 2 3 > s2.hi/c5a.out
+./solver_benchmark.exe ../structures/c6.xyz 3.453 1.0 2 3 > s2.hi/c6a.out
+./solver_benchmark.exe ../structures/c7.xyz 3.475 1.0 2 3 > s2.hi/c7a.out
+./solver_benchmark.exe ../structures/c8.xyz 3.479 1.0 2 3 > s2.hi/c8a.out
+./solver_benchmark.exe ../structures/c9.xyz 3.524 1.0 2 3 > s2.hi/c9a.out
+./solver_benchmark.exe ../structures/c10.xyz 3.532 1.0 2 3 > s2.hi/c10a.out
+./solver_benchmark.exe ../structures/c11.xyz 3.529 1.0 2 3 > s2.hi/c11a.out
+./solver_benchmark.exe ../structures/c12.xyz 3.565 1.0 2 3 > s2.hi/c12a.out
+./solver_benchmark.exe ../structures/c13.xyz 3.578 1.0 2 3 > s2.hi/c13a.out
+./solver_benchmark.exe ../structures/c14.xyz 3.606 1.0 2 3 > s2.hi/c14a.out
+./solver_benchmark.exe ../structures/c15.xyz 3.612 1.0 2 3 > s2.hi/c15a.out
+./solver_benchmark.exe ../structures/c16.xyz 3.634 1.0 2 3 > s2.hi/c16a.out
+./solver_benchmark.exe ../structures/c17.xyz 3.634 1.0 2 3 > s2.hi/c17a.out
+./solver_benchmark.exe ../structures/c18.xyz 3.658 1.0 2 3 > s2.hi/c18a.out
+./solver_benchmark.exe ../structures/c19.xyz 3.671 1.0 2 3 > s2.hi/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 2 3 > s2.hi/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 3.700 1.0 2 3 > s2.hi/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 3.712 1.0 2 3 > s2.hi/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 3.720 1.0 2 3 > s2.hi/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 3.730 1.0 2 3 > s2.hi/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 3.741 1.0 2 3 > s2.hi/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 3.749 1.0 2 3 > s2.hi/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 2 3 > s2.hi/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 3.763 1.0 2 3 > s2.hi/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 3.769 1.0 2 3 > s2.hi/c29.out
+
+./solver_benchmark.exe ../structures/c1.xyz 2.031 0.3 2 4 > s2.mid/c1a.out
+./solver_benchmark.exe ../structures/c2.xyz 2.552 0.3 2 4 > s2.mid/c2a.out
+./solver_benchmark.exe ../structures/c3.xyz 2.525 0.3 2 4 > s2.mid/c3a.out
+./solver_benchmark.exe ../structures/c4.xyz 2.813 0.3 2 4 > s2.mid/c4a.out
+./solver_benchmark.exe ../structures/c5.xyz 2.583 0.3 2 4 > s2.mid/c5a.out
+./solver_benchmark.exe ../structures/c6.xyz 2.674 0.3 2 4 > s2.mid/c6a.out
+./solver_benchmark.exe ../structures/c7.xyz 2.703 0.3 2 4 > s2.mid/c7a.out
+./solver_benchmark.exe ../structures/c8.xyz 2.701 0.3 2 4 > s2.mid/c8a.out
+./solver_benchmark.exe ../structures/c9.xyz 2.734 0.3 2 4 > s2.mid/c9a.out
+./solver_benchmark.exe ../structures/c10.xyz 2.719 0.3 2 4 > s2.mid/c10a.out
+./solver_benchmark.exe ../structures/c11.xyz 2.738 0.3 2 4 > s2.mid/c11a.out
+./solver_benchmark.exe ../structures/c12.xyz 2.776 0.3 2 4 > s2.mid/c12a.out
+./solver_benchmark.exe ../structures/c13.xyz 2.774 0.3 2 4 > s2.mid/c13a.out
+./solver_benchmark.exe ../structures/c14.xyz 2.786 0.3 2 4 > s2.mid/c14a.out
+./solver_benchmark.exe ../structures/c15.xyz 2.805 0.3 2 4 > s2.mid/c15a.out
+./solver_benchmark.exe ../structures/c16.xyz 2.815 0.3 2 4 > s2.mid/c16a.out
+./solver_benchmark.exe ../structures/c17.xyz 2.821 0.3 2 4 > s2.mid/c17a.out
+./solver_benchmark.exe ../structures/c18.xyz 2.836 0.3 2 4 > s2.mid/c18a.out
+./solver_benchmark.exe ../structures/c19.xyz 2.846 0.3 2 4 > s2.mid/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 2 4 > s2.mid/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.871 0.3 2 4 > s2.mid/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.881 0.3 2 4 > s2.mid/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.888 0.3 2 4 > s2.mid/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.896 0.3 2 4 > s2.mid/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.905 0.3 2 4 > s2.mid/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.912 0.3 2 4 > s2.mid/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.918 0.3 2 4 > s2.mid/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 2.923 0.3 2 4 > s2.mid/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 2.928 0.3 2 4 > s2.mid/c29.out
+
+./solver_benchmark.exe ../structures/c1.xyz 1.819 0.03 2 6 > s2.lo/c1a.out
+./solver_benchmark.exe ../structures/c2.xyz 2.239 0.03 2 6 > s2.lo/c2a.out
+./solver_benchmark.exe ../structures/c3.xyz 2.639 0.03 2 6 > s2.lo/c3a.out
+./solver_benchmark.exe ../structures/c4.xyz 3.155 0.03 2 6 > s2.lo/c4a.out
+./solver_benchmark.exe ../structures/c5.xyz 2.579 0.03 2 6 > s2.lo/c5a.out
+./solver_benchmark.exe ../structures/c6.xyz 2.588 0.03 2 6 > s2.lo/c6a.out
+./solver_benchmark.exe ../structures/c7.xyz 2.680 0.03 2 6 > s2.lo/c7a.out
+./solver_benchmark.exe ../structures/c8.xyz 2.579 0.03 2 6 > s2.lo/c8a.out
+./solver_benchmark.exe ../structures/c9.xyz 2.717 0.03 2 6 > s2.lo/c9a.out
+./solver_benchmark.exe ../structures/c10.xyz 2.756 0.03 2 6 > s2.lo/c10a.out
+./solver_benchmark.exe ../structures/c11.xyz 2.761 0.03 2 6 > s2.lo/c11a.out
+./solver_benchmark.exe ../structures/c12.xyz 2.774 0.03 2 6 > s2.lo/c12a.out
+./solver_benchmark.exe ../structures/c13.xyz 2.699 0.03 2 6 > s2.lo/c13a.out
+./solver_benchmark.exe ../structures/c14.xyz 2.782 0.03 2 6 > s2.lo/c14a.out
+./solver_benchmark.exe ../structures/c15.xyz 2.799 0.03 2 6 > s2.lo/c15a.out
+./solver_benchmark.exe ../structures/c16.xyz 2.742 0.03 2 6 > s2.lo/c16a.out
+./solver_benchmark.exe ../structures/c17.xyz 2.808 0.03 2 6 > s2.lo/c17a.out
+./solver_benchmark.exe ../structures/c18.xyz 2.790 0.03 2 6 > s2.lo/c18a.out
+./solver_benchmark.exe ../structures/c19.xyz 2.809 0.03 2 6 > s2.lo/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.843 0.03 2 6 > s2.lo/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.850 0.03 2 6 > s2.lo/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.861 0.03 2 6 > s2.lo/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.867 0.03 2 6 > s2.lo/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.876 0.03 2 6 > s2.lo/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.885 0.03 2 6 > s2.lo/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.891 0.03 2 6 > s2.lo/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.897 0.03 2 6 > s2.lo/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 2.903 0.03 2 6 > s2.lo/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 2.908 0.03 2 6 > s2.lo/c29.out
+
+solver = 6 (localized trace):
+
+./solver_benchmark.exe ../structures/c1.xyz 3.137 1.0 6 3 1e-3 8.0 > s6.hiB/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 3.284 1.0 6 3 1e-3 8.0 > s6.hiB/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 3.294 1.0 6 3 1e-3 8.0 > s6.hiB/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 3.410 1.0 6 3 1e-3 8.0 > s6.hiB/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 3.398 1.0 6 3 1e-3 8.0 > s6.hiB/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 3.453 1.0 6 3 1e-3 8.0 > s6.hiB/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 3.475 1.0 6 3 1e-3 8.0 > s6.hiB/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 3.479 1.0 6 3 1e-3 8.0 > s6.hiB/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 3.524 1.0 6 3 1e-3 8.0 > s6.hiB/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 3.532 1.0 6 3 1e-3 8.0 > s6.hiB/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 3.529 1.0 6 3 1e-3 8.0 > s6.hiB/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 3.565 1.0 6 3 1e-3 8.0 > s6.hiB/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 3.578 1.0 6 3 1e-3 8.0 > s6.hiB/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 3.606 1.0 6 3 1e-3 8.0 > s6.hiB/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 3.612 1.0 6 3 1e-3 8.0 > s6.hiB/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 3.634 1.0 6 3 1e-3 8.0 > s6.hiB/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 3.634 1.0 6 3 1e-3 8.0 > s6.hiB/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 3.658 1.0 6 3 1e-3 8.0 > s6.hiB/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 3.671 1.0 6 3 1e-3 8.0 > s6.hiB/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 6 3 1e-3 8.0 > s6.hiB/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 3.700 1.0 6 3 1e-3 8.0 > s6.hiB/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 3.712 1.0 6 3 1e-3 8.0 > s6.hiB/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 3.720 1.0 6 3 1e-3 8.0 > s6.hiB/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 3.730 1.0 6 3 1e-3 8.0 > s6.hiB/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 3.741 1.0 6 3 1e-3 8.0 > s6.hiB/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 3.749 1.0 6 3 1e-3 8.0 > s6.hiB/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 6 3 1e-3 8.0 > s6.hiB/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 3.763 1.0 6 3 1e-3 8.0 > s6.hiB/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 3.769 1.0 6 3 1e-3 8.0 > s6.hiB/c29.out
+./solver_benchmark.exe ../structures/c30.xyz 3.776 1.0 6 3 1e-3 8.0 > s6.hiB/c30.out
+./solver_benchmark.exe ../structures/c31.xyz 3.782 1.0 6 3 1e-3 8.0 > s6.hiB/c31.out
+./solver_benchmark.exe ../structures/c32.xyz 3.787 1.0 6 3 1e-3 8.0 > s6.hiB/c32.out
+./solver_benchmark.exe ../structures/c33.xyz 3.792 1.0 6 3 1e-3 8.0 > s6.hiB/c33.out
+./solver_benchmark.exe ../structures/c34.xyz 3.796 1.0 6 3 1e-3 8.0 > s6.hiB/c34.out
+./solver_benchmark.exe ../structures/c35.xyz 3.800 1.0 6 3 1e-3 8.0 > s6.hiB/c35.out
+./solver_benchmark.exe ../structures/c36.xyz 3.804 1.0 6 3 1e-3 8.0 > s6.hiB/c36.out
+./solver_benchmark.exe ../structures/c37.xyz 3.807 1.0 6 3 1e-3 8.0 > s6.hiB/c37.out
+./solver_benchmark.exe ../structures/c38.xyz 3.811 1.0 6 3 1e-3 8.0 > s6.hiB/c38.out
+./solver_benchmark.exe ../structures/c39.xyz 3.814 1.0 6 3 1e-3 8.0 > s6.hiB/c39.out
+./solver_benchmark.exe ../structures/c40.xyz 3.817 1.0 6 3 1e-3 8.0 > s6.hiB/c40.out
+./solver_benchmark.exe ../structures/c41.xyz 3.819 1.0 6 3 1e-3 8.0 > s6.hiB/c41.out
+
+./solver_benchmark.exe ../structures/c1.xyz 2.031 0.3 6 4 1e-3 14.0 > s6.midB/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 2.552 0.3 6 4 1e-3 14.0 > s6.midB/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 2.525 0.3 6 4 1e-3 14.0 > s6.midB/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 2.813 0.3 6 4 1e-3 14.0 > s6.midB/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 2.583 0.3 6 4 1e-3 14.0 > s6.midB/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 2.674 0.3 6 4 1e-3 14.0 > s6.midB/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 2.703 0.3 6 4 1e-3 14.0 > s6.midB/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 2.701 0.3 6 4 1e-3 14.0 > s6.midB/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 2.734 0.3 6 4 1e-3 14.0 > s6.midB/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 2.719 0.3 6 4 1e-3 14.0 > s6.midB/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 2.738 0.3 6 4 1e-3 14.0 > s6.midB/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 2.776 0.3 6 4 1e-3 14.0 > s6.midB/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 2.774 0.3 6 4 1e-3 14.0 > s6.midB/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 2.786 0.3 6 4 1e-3 14.0 > s6.midB/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 2.805 0.3 6 4 1e-3 14.0 > s6.midB/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 2.815 0.3 6 4 1e-3 14.0 > s6.midB/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 2.821 0.3 6 4 1e-3 14.0 > s6.midB/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 2.836 0.3 6 4 1e-3 14.0 > s6.midB/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 2.846 0.3 6 4 1e-3 14.0 > s6.midB/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 6 4 1e-3 14.0 > s6.midB/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.871 0.3 6 4 1e-3 14.0 > s6.midB/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.881 0.3 6 4 1e-3 14.0 > s6.midB/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.888 0.3 6 4 1e-3 14.0 > s6.midB/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.896 0.3 6 4 1e-3 14.0 > s6.midB/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.905 0.3 6 4 1e-3 14.0 > s6.midB/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.912 0.3 6 4 1e-3 14.0 > s6.midB/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.918 0.3 6 4 1e-3 14.0 > s6.midB/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 2.923 0.3 6 4 1e-3 14.0 > s6.midB/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 2.928 0.3 6 4 1e-3 14.0 > s6.midB/c29.out
+./solver_benchmark.exe ../structures/c30.xyz 2.933 0.3 6 4 1e-3 14.0 > s6.midB/c30.out
+./solver_benchmark.exe ../structures/c31.xyz 2.938 0.3 6 4 1e-3 14.0 > s6.midB/c31.out
+./solver_benchmark.exe ../structures/c32.xyz 2.943 0.3 6 4 1e-3 14.0 > s6.midB/c32.out
+./solver_benchmark.exe ../structures/c33.xyz 2.947 0.3 6 4 1e-3 14.0 > s6.midB/c33.out
+./solver_benchmark.exe ../structures/c34.xyz 2.950 0.3 6 4 1e-3 14.0 > s6.midB/c34.out
+./solver_benchmark.exe ../structures/c35.xyz 2.954 0.3 6 4 1e-3 14.0 > s6.midB/c35.out
+./solver_benchmark.exe ../structures/c36.xyz 2.957 0.3 6 4 1e-3 14.0 > s6.midB/c36.out
+./solver_benchmark.exe ../structures/c37.xyz 2.960 0.3 6 4 1e-3 14.0 > s6.midB/c37.out
+
+./solver_benchmark.exe ../structures/c1.xyz 1.819 0.03 6 6 1e-3 38.0 > s6.loB/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 2.239 0.03 6 6 1e-3 38.0 > s6.loB/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 2.639 0.03 6 6 1e-3 38.0 > s6.loB/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 3.155 0.03 6 6 1e-3 38.0 > s6.loB/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 2.579 0.03 6 6 1e-3 38.0 > s6.loB/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 2.588 0.03 6 6 1e-3 38.0 > s6.loB/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 2.680 0.03 6 6 1e-3 38.0 > s6.loB/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 2.579 0.03 6 6 1e-3 38.0 > s6.loB/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 2.717 0.03 6 6 1e-3 38.0 > s6.loB/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 2.756 0.03 6 6 1e-3 38.0 > s6.loB/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 2.761 0.03 6 6 1e-3 38.0 > s6.loB/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 2.774 0.03 6 6 1e-3 38.0 > s6.loB/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 2.699 0.03 6 6 1e-3 38.0 > s6.loB/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 2.782 0.03 6 6 1e-3 38.0 > s6.loB/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 2.799 0.03 6 6 1e-3 38.0 > s6.loB/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 2.742 0.03 6 6 1e-3 38.0 > s6.loB/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 2.808 0.03 6 6 1e-3 38.0 > s6.loB/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 2.843 0.03 6 6 1e-3 38.0 > s6.loB/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 2.850 0.03 6 6 1e-3 38.0 > s6.loB/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.861 0.03 6 6 1e-3 38.0 > s6.loB/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.850 0.03 6 6 1e-3 38.0 > s6.loB/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.861 0.03 6 6 1e-3 38.0 > s6.loB/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.867 0.03 6 6 1e-3 38.0 > s6.loB/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.876 0.03 6 6 1e-3 38.0 > s6.loB/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.885 0.03 6 6 1e-3 38.0 > s6.loB/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.891 0.03 6 6 1e-3 38.0 > s6.loB/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.897 0.03 6 6 1e-3 38.0 > s6.loB/c27.out
+
+solver = 8 (randomized trace):
+
+./solver_benchmark.exe ../structures/c1.xyz 3.137 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 3.284 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 3.294 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 3.410 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 3.398 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 3.453 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 3.475 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 3.479 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 3.524 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 3.532 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 3.529 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 3.565 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 3.578 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 3.606 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 3.612 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 3.634 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 3.634 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 3.658 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 3.671 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 3.700 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 3.712 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 3.720 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 3.730 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 3.741 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 3.749 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 3.756 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 3.763 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 3.769 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c29.out
+./solver_benchmark.exe ../structures/c30.xyz 3.776 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c30.out
+./solver_benchmark.exe ../structures/c31.xyz 3.782 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c31.out
+./solver_benchmark.exe ../structures/c32.xyz 3.787 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c32.out
+./solver_benchmark.exe ../structures/c33.xyz 3.792 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c33.out
+./solver_benchmark.exe ../structures/c34.xyz 3.796 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c34.out
+./solver_benchmark.exe ../structures/c35.xyz 3.800 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c35.out
+./solver_benchmark.exe ../structures/c36.xyz 3.804 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c36.out
+./solver_benchmark.exe ../structures/c37.xyz 3.807 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c37.out
+./solver_benchmark.exe ../structures/c38.xyz 3.811 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c38.out
+./solver_benchmark.exe ../structures/c39.xyz 3.814 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c39.out
+./solver_benchmark.exe ../structures/c40.xyz 3.817 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c40.out
+./solver_benchmark.exe ../structures/c41.xyz 3.819 1.0 8 3 1e-3 12.0 1 1 > s8.hi/c41.out
+
+./solver_benchmark.exe ../structures/c1.xyz 2.031 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 2.552 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 2.525 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 2.813 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 2.583 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 2.674 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 2.703 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 2.701 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 2.734 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 2.719 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 2.738 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 2.776 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 2.774 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 2.786 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 2.805 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 2.815 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 2.821 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 2.836 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 2.846 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.863 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.871 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.881 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.888 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c23.out
+./solver_benchmark.exe ../structures/c24.xyz 2.896 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c24.out
+./solver_benchmark.exe ../structures/c25.xyz 2.905 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c25.out
+./solver_benchmark.exe ../structures/c26.xyz 2.912 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c26.out
+./solver_benchmark.exe ../structures/c27.xyz 2.918 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c27.out
+./solver_benchmark.exe ../structures/c28.xyz 2.923 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c28.out
+./solver_benchmark.exe ../structures/c29.xyz 2.928 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c29.out
+./solver_benchmark.exe ../structures/c30.xyz 2.933 0.3 8 4 1e-3 22.0 1 1 > s8.midB/c30.out
+
+./solver_benchmark.exe ../structures/c1.xyz 1.819 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c1.out
+./solver_benchmark.exe ../structures/c2.xyz 2.239 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c2.out
+./solver_benchmark.exe ../structures/c3.xyz 2.639 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c3.out
+./solver_benchmark.exe ../structures/c4.xyz 3.155 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c4.out
+./solver_benchmark.exe ../structures/c5.xyz 2.579 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c5.out
+./solver_benchmark.exe ../structures/c6.xyz 2.588 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c6.out
+./solver_benchmark.exe ../structures/c7.xyz 2.680 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c7.out
+./solver_benchmark.exe ../structures/c8.xyz 2.579 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c8.out
+./solver_benchmark.exe ../structures/c9.xyz 2.717 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c9.out
+./solver_benchmark.exe ../structures/c10.xyz 2.756 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c10.out
+./solver_benchmark.exe ../structures/c11.xyz 2.761 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c11.out
+./solver_benchmark.exe ../structures/c12.xyz 2.774 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c12.out
+./solver_benchmark.exe ../structures/c13.xyz 2.699 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c13.out
+./solver_benchmark.exe ../structures/c14.xyz 2.782 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c14.out
+./solver_benchmark.exe ../structures/c15.xyz 2.799 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c15.out
+./solver_benchmark.exe ../structures/c16.xyz 2.742 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c16.out
+./solver_benchmark.exe ../structures/c17.xyz 2.808 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c17.out
+./solver_benchmark.exe ../structures/c18.xyz 2.843 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c18.out
+./solver_benchmark.exe ../structures/c19.xyz 2.850 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c19.out
+./solver_benchmark.exe ../structures/c20.xyz 2.861 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c20.out
+./solver_benchmark.exe ../structures/c20.xyz 2.861 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c20.out
+./solver_benchmark.exe ../structures/c21.xyz 2.850 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c21.out
+./solver_benchmark.exe ../structures/c22.xyz 2.861 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c22.out
+./solver_benchmark.exe ../structures/c23.xyz 2.867 0.03 8 6 1e-3 96.0 1 1 > s8.loB/c23.out
+

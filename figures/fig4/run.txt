@@ -1,0 +1,126 @@
+Data for (a):
+
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-2 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-3 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-4 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-5 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-6 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-7 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-8 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-9 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-10 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-11 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-12 30.0 7.0 2.0
+./solver_benchmark.exe ../structures/crystal.xyz 2.997 1.0 -1 1e-13 30.0 7.0 2.0
+
+Data for (b):
+
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 30 1.171872e-02 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 45 1.164423e-03 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 60 1.102217e-04 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 75 1.008468e-05 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 90 8.669293e-07 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 105 7.719545e-08 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 7 120 7.131394e-09 0.0 1 1
+
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 8 2 1.739498e-02 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 8 3 6.475071e-04 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 8 4 1.794105e-05 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 8 5 4.136005e-07 0.0 1 1
+./solver_benchmark.exe ../structures/c27.xyz 3.852 1.0 8 6 6.836627e-09 0.0 1 1
+
+Data for (c):
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 1 > random/random1a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 2 > random/random1b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 4 > random/random1c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 8 > random/random1d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 16 > random/random1e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 32 > random/random1f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 64 > random/random1g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 128 > random/random1h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 256 > random/random1i.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 512 > random/random1j.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 1024 > random/random1k.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 2048 > random/random1l.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 4096 > random/random1m.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 8192 > random/random1n.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 16384 > random/random1o.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 0.0 1 32768 > random/random1p.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 1 > random/random2a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 2 > random/random2b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 4 > random/random2c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 8 > random/random2d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 16 > random/random2e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 32 > random/random2f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 64 > random/random2g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 128 > random/random2h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 256 > random/random2i.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 512 > random/random2j.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 1024 > random/random2k.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 2048 > random/random2l.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 3.0 1 4096 > random/random2m.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 1 > random/random3a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 2 > random/random3b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 4 > random/random3c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 8 > random/random3d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 16 > random/random3e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 32 > random/random3f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 64 > random/random3g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 128 > random/random3h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 256 > random/random3i.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 512 > random/random3j.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 1024 > random/random3k.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 4.0 1 2048 > random/random3l.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 1 > random/random4a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 2 > random/random4b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 4 > random/random4c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 8 > random/random4d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 16 > random/random4e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 32 > random/random4f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 64 > random/random4g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 128 > random/random4h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 256 > random/random4i.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 512 > random/random4j.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 5.0 1 1024 > random/random4k.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 1 > random/random5a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 2 > random/random5b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 4 > random/random5c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 8 > random/random5d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 16 > random/random5e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 32 > random/random5f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 64 > random/random5g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 128 > random/random5h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 256 > random/random5i.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 7.0 1 512 > random/random5j.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 1 > random/random6a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 2 > random/random6b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 4 > random/random6c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 8 > random/random6d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 16 > random/random6e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 32 > random/random6f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 64 > random/random6g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 128 > random/random6h.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 9.0 1 256 > random/random6i.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 1 > random/random7a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 2 > random/random7b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 4 > random/random7c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 8 > random/random7d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 16 > random/random7e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 32 > random/random7f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 64 > random/random7g.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 12.0 1 128 > random/random7h.out
+
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 1 > random/random8a.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 2 > random/random8b.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 4 > random/random8c.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 8 > random/random8d.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 16 > random/random8e.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 32 > random/random8f.out
+./solver_benchmark.exe ../structures/c20.xyz 3.691 1.0 8 3 1e-3 18.0 1 64 > random/random8g.out
