@@ -95,19 +95,31 @@ ax2.loglog(x,3.2*x,'g-',lw=0.75,zorder=0)
 ax3.loglog(x,536.0*x,'g-',lw=0.75,zorder=0)
 ax4.loglog(x,3.3e2*x,'g-',lw=0.75,zorder=0)
 
-ax1.text(1e4,0.1,r'$T = 1$ eV')
-ax2.text(1e4,0.1,r'$T = 0.3$ eV')
-ax3.text(1e4,0.1,r'$T = 0.03$ eV')
+ax1.text(1e4,4,r'$T = 1$ eV')
+ax2.text(1e4,4,r'$T = 0.3$ eV')
+ax3.text(1e4,4,r'$T = 0.03$ eV')
+
+ax1.text(1e3,0.5,r'\# of pole pairs = 3')
+ax2.text(1e3,0.5,r'\# of pole pairs = 4')
+ax3.text(1e3,0.5,r'\# of pole pairs = 6')
+
+ax1.text(1e3,0.25,r'localization radius = 8 $\AA$')
+ax2.text(1e3,0.25,r'localization radius = 14 $\AA$')
+ax3.text(1e3,0.25,r'localization radius = 38 $\AA$')
+
+ax1.text(1e3,0.125,r'coloring radius = 12 $\AA$')
+ax2.text(1e3,0.125,r'coloring radius = 22 $\AA$')
+ax3.text(1e3,0.125,r'coloring radius = 96 $\AA$')
 
 ax1.text(4.0,0.03e6,r'(a)')
 ax2.text(4.0,0.03e6,r'(b)')
 ax3.text(4.0,0.03e6,r'(c)')
 ax4.text(4.0,np.sqrt(0.03)*1e8,r'(d)')
 
-x0 = 0.3e4
-x1 = 0.5e4
-y0 = 1e1
-y1 = 0.85e1
+x0 = 0.3e1
+x1 = 0.5e1
+y0 = 4.2e3
+y1 = 3.57e3
 dy = 0.5
 ax1.plot(x0,y0,'ks',ms=4)
 ax1.plot(x0,y0*dy,'ro',ms=4)

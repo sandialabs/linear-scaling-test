@@ -453,7 +453,7 @@ void random_green(double complex shift, // chemical potential (real part) & temp
       {
         int x2, y2, z2;
         g2xyz(offset+k,&x2,&y2,&z2);
-        if( (fabs(x1-x2) + fabs(y1-y2) + fabs(z1-z2)) == 1)
+        if( (abs(x1-x2) + abs(y1-y2) + abs(z1-z2)) == 1)
         {
           for(int l=0 ; l<bandwidth ; l++)
           { coarse_expand[k+l*size] += coarse_old[j+l*old_size]; }
@@ -796,18 +796,25 @@ int main(int argc, char **argv)
   { green5[i] = green0[i]; }
   self_green(shift, nshell, green5);
 
+  double complex *green6 = (double complex*)malloc(sizeof(double complex)*s_sum(nshell));
+  perturb_green(shift, nshell, green2, dgreen);
+  for(int i=0 ; i<nsite ; i++)
+  { green6[i] = green2[i] + dgreen[i]; }
+
   double *shell_norm = (double*)malloc(sizeof(double)*nshell);
   double *shell_norm2 = (double*)malloc(sizeof(double)*nshell);
   double *shell_norm3 = (double*)malloc(sizeof(double)*nshell);
   double *shell_norm4 = (double*)malloc(sizeof(double)*nshell);
   double *shell_norm5 = (double*)malloc(sizeof(double)*nshell);
+  double *shell_norm6 = (double*)malloc(sizeof(double)*nshell);
   norm2(nshell,green0,green,shell_norm);
   norm2(nshell,green0,green2,shell_norm2);
   norm2(nshell,green0,green3,shell_norm3);
   norm2(nshell,green0,green4,shell_norm4);
   norm2(nshell,green0,green5,shell_norm5);
+  norm2(nshell,green0,green6,shell_norm6);
   for(int i=0 ; i<nshell ; i++)
-  { printf("%d %e %e %e %e %e\n",i,shell_norm[i],shell_norm2[i],shell_norm3[i],shell_norm4[i],shell_norm5[i]); }
+  { printf("%d %e %e %e %e %e %e\n",i,shell_norm[i],shell_norm2[i],shell_norm3[i],shell_norm4[i],shell_norm5[i],shell_norm6[i]); }
 
   return 0;
 }

@@ -12,8 +12,8 @@ matplotlib.rcParams['font.weight'] = 'roman'
 matplotlib.rcParams['font.size'] = 8
 
 # preconditioning data
-nshell, linear, squares, random, perturb, nonlinear = np.loadtxt("hi_local.txt",unpack=True)
-nshell2, linear2, squares2, random2, perturb2, nonlinear2 = np.loadtxt("hi21.txt",unpack=True)
+nshell, linear, squares, random, perturb, nonlinear, perturbLS = np.loadtxt("hi_local.txt",unpack=True)
+nshell2, linear2, squares2, random2, perturb2, nonlinear2, perturbLS2 = np.loadtxt("hi21.txt",unpack=True)
 
 fig = plt.figure(figsize=(3.37,4.0))
 
@@ -23,6 +23,7 @@ ax1.xaxis.set_major_locator(MaxNLocator(integer=True))
 plt.ylim(1e-4,1e0)
 plt.xlim(0.0,20.0)
 
+ax1.semilogy(nshell+1,perturbLS,'wo',ms=5,mec='orange',clip_on=False,zorder=10)
 ax1.semilogy(nshell+1,squares,'ws',ms=5,mec='gray',clip_on=False,zorder=10)
 ax1.semilogy(nshell+1,linear,'ks',ms=3,clip_on=False,zorder=10)
 ax1.semilogy(nshell+1,random,'ro',ms=3,clip_on=False,zorder=10)
@@ -30,17 +31,19 @@ ax1.semilogy(nshell+1,perturb,'gx',ms=4,clip_on=False,zorder=10)
 ax1.semilogy(nshell+1,nonlinear,'b+',ms=5,clip_on=False,zorder=10)
 
 dy = 0.5
-plt.plot(1.5,5e-3*dy**0,'ks',ms=4)
-plt.plot(1.5,5e-3*dy**1,'ws',ms=5,mec='gray')
-plt.plot(1.5,5e-3*dy**2,'gx',ms=4)
-plt.plot(1.5,5e-3*dy**3,'b+',ms=5)
-plt.plot(1.5,5e-3*dy**4,'ro',ms=3)
+plt.plot(1.1,7.5e-3*dy**0,'ks',ms=4)
+plt.plot(1.1,7.5e-3*dy**1,'ws',ms=5,mec='gray')
+plt.plot(1.1,7.5e-3*dy**2,'gx',ms=4)
+plt.plot(1.1,7.5e-3*dy**3,'b+',ms=5)
+plt.plot(1.1,7.5e-3*dy**4,'wo',ms=5,mec='orange')
+plt.plot(1.1,7.5e-3*dy**5,'ro',ms=3)
 
-plt.text(2.1,4.2e-3*dy**0,r'no self-energy')
-plt.text(2.1,4.2e-3*dy**1,r'least-squares self-energy')
-plt.text(2.1,4.2e-3*dy**2,r'perturbative self-energy')
-plt.text(2.1,4.2e-3*dy**3,r'optimized self-energy')
-plt.text(2.1,4.2e-3*dy**4,r'randomized coarse-graining')
+plt.text(1.7,6.3e-3*dy**0,r'no self-energy')
+plt.text(1.7,6.3e-3*dy**1,r'least-squares self-energy')
+plt.text(1.7,6.3e-3*dy**2,r'perturbative self-energy')
+plt.text(1.7,6.3e-3*dy**3,r'optimized self-energy')
+plt.text(1.7,6.3e-3*dy**4,r'perturbative least-squares self-energy')
+plt.text(1.7,6.3e-3*dy**5,r'randomized coarse-graining')
 
 plt.xlabel(r'\# of shells')
 plt.ylabel(r'local error')
@@ -51,6 +54,7 @@ ax2.xaxis.set_major_locator(MaxNLocator(integer=True))
 plt.ylim(1e-7,1e-2)
 plt.xlim(0,20)
 
+ax2.semilogy(nshell2,perturbLS2,'wo',ms=5,mec='orange',clip_on=False,zorder=10)
 ax2.semilogy(nshell2,squares2,'ws',ms=5,mec='gray',clip_on=False,zorder=10)
 ax2.semilogy(nshell2,linear2,'ks',ms=3,clip_on=False,zorder=10)
 ax2.semilogy(nshell2,random2,'ro',ms=3,clip_on=False,zorder=10)
